@@ -20,6 +20,7 @@ class NewsAdapter(val newslist : List<News>) : RecyclerView.Adapter<NewsAdapter.
     }
 
     override fun onBindViewHolder(newsholder: Newsholder, position: Int) {
+
         val currentnews = newslist[position]
         with(newsholder.itemView){
             tvTitle.text = currentnews.title
